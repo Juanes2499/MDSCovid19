@@ -1,0 +1,90 @@
+/* .sidebar{
+    background: #FFF 0% 0% no-repeat padding-box;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    z-index: 9;
+}
+
+.sidebar-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 0%;
+    z-index: 2;
+}
+
+.content-left{
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+}
+
+.content-right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 70px;
+}
+
+.right-container{
+    right: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 20px;
+    align-items: center;
+    width: 40vw;
+    justify-content: end;
+}
+
+.nombre-user{
+    color: #3B3798;
+    font-family: 'Roboto';
+    font-size: 100%;
+    font-weight: bold ;
+}
+
+.email-user{
+    color: #3B3798;
+    font-family: 'Roboto';
+    font-size: 80%;
+}
+
+.sidemenu{
+    min-height: 100vh; 
+    position: fixed;
+    display: flex;
+    background-color: white;
+    z-index: 2;
+}
+
+@media screen and (max-width: 960px) {
+    .nombre-user{
+        color: #3B3798;
+        font-family: 'Roboto';
+        font-size: 90%;
+        font-weight: bold;
+    }
+    .email-user{
+        color: #3B3798;
+        font-family: 'Roboto';
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nombre-user{
+        color: #3B3798;
+        font-family: 'Roboto';
+        font-size: 80%;
+        font-weight: bold;
+    }
+    .email-user{
+        color: #3B3798;
+        font-family: 'Roboto';
+        font-size: 70%;
+    }
+}
+ */

@@ -1,0 +1,57 @@
+.modal-header{
+    height: 10%;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 55%;
+    margin-top: 3%;
+    z-index: 2;
+}
+
+.titulo-header{
+    color: #333333;
+    margin-top: 1%;
+    font-family: 'Roboto';
+    font-size: 200%;
+}
+
+.cerrar-header{
+    margin-top: 70%;
+    color: red;
+}
+
+.modal-linea{
+    background: rgba(229, 232, 232,0.5);
+    margin-left: 5%;
+    margin-bottom: 5%;
+    height: 2px;
+    width: 90%;
+}
+
+.modal-body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-field{
+    color: grey;
+    font-family: "Roboto", sans-serif;
+    font-size: 100%;
+}
+
+.field{
+    width: 100;
+}
+
+.toggle-box{
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 5%;
+}

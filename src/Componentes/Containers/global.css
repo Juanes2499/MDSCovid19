@@ -1,0 +1,10 @@
+.container-global{
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+    position: relative;
+}

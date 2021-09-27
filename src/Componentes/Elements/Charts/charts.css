@@ -1,0 +1,13 @@
+.headers{
+    color: rgb(148, 148, 148);
+    font-family: "Roboto";
+    font-weight: lighter;
+    font-size: 200%;
+}
+
+.content-name{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 20px;
+    justify-content: flex-start;
+}
