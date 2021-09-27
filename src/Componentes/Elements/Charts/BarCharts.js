@@ -47,19 +47,18 @@ export const BarCharts = ({configuration, nameReport, iconReport, data, configBa
                         <br />
                             <BarChart
                                 width={1700}
-                                height={610}
+                                height={600}
                                 data={data}
                                 margin={{
                                     top: 0, right: 70, left: 70, bottom: 50,
                                 }}
                             >
                                 <CartesianGrid strokeDasharray="3 3" />
-                                <XAxis dataKey="dateUpdate" orientation="top" />
-                                <XAxis dataKey="dateUpdate" axisLine={false} tickLine={true} interval={0} height={1} scale="auto" xAxisId="quarter" />
+                                <XAxis dataKey={configBars.dataKey} orientation="bottom"/>
                                 <YAxis  tick={true} tickFormatter={DataFormater}/>
-
-                                <Tooltip formatter={(value) => "$" + new Intl.NumberFormat('en').format(value)}/>
-
+                                <Tooltip formatter={(value) => new Intl.NumberFormat('en').format(value)}/>
+                                <Legend verticalAlign="top" align="center" height={30}/>
+                                <Brush dataKey={configBars.dataKey} height={30} stroke="#8884d8" />
                                 {
                                     bars.map((item, index) => {
                                         return(
@@ -67,8 +66,6 @@ export const BarCharts = ({configuration, nameReport, iconReport, data, configBa
                                         )
                                     })
                                 }  
-                                <Brush dataKey="dateUpdate" height={30} stroke="#8884d8" />
-                                <Legend margin={{top: 0, right: 30, left: 20, bottom: 100}} verticalAlign="top" align="center"/>
                             </BarChart>
                         <br />
                         <br />

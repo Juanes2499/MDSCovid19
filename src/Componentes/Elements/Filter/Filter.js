@@ -27,29 +27,6 @@ const SelectPickerMaestra = ({selectPickerType, data, handleOperator}) => {
       onChange={handleOperator}
     />
   )
-  // if(selectPickerType === 1){
-  //   console.log(selectPickerType)
-  //   return (
-  //     <SelectPicker
-  //       size="md"
-  //       placeholder="Select"
-  //       data={data}
-  //       style={{ width: 100, display: 'block', marginBottom: 1, fontFamily:'Roboto'}}
-  //       onChange={handleOperator}
-  //     />
-  //   )
-  // }else if(selectPickerType === 2){
-  //   console.log(selectPickerType)
-  //   return (
-  //     <MultiCascader
-  //       size="md"
-  //       placeholder="Select"
-  //       data={data}
-  //       style={{ width: 100, display: 'block', marginBottom: 1, fontFamily:'Roboto'}}
-  //       onChange={handleOperator}
-  //     />
-  //   )
-  // }
 }
 
 const TypeField = ({dataEntryType, key, name, label, accepter, type, handlerValue, handleOperator, value, selectPickerType, valueSelectPicker, inputFieldStyle, ...rest }) => {

@@ -7,33 +7,13 @@ import {BarsCharts} from '../global';
 
 //Action
 import {
-    getInformationPerDay, 
-} from '../../../Acciones/GlobalDataPerDay/GlobalDataPerDay';
+    getInformationCharts, 
+} from '../../../Acciones/Reports/Reports';
 
 //Elementos
-import {DataTable} from '../../Elements/DataTable/DataTable';
-import Filter from '../../Elements/Filter/Filter';
 import {Notify} from '../../Elements/Notify/Notify';
 import {BarCharts} from '../../Elements/Charts/BarCharts';
 
-//Configuration filter 
-const configFilter ={
-    cellHeight:70,
-    cols:3,
-    styleIconSummary:{
-        color:'white'
-    },
-    styleLabelSummary: {
-        color: 'rgb(255,255,255)',
-        fontFamily: "Roboto",
-        fontWeight: 'bold',
-        fontSize: '150%',
-    },
-    styleAccordionSummary: {
-        backgroundColor:'rgba(17, 0, 94, 0.808)', 
-        borderRadius:'5px'
-    }
-}
 
 class ListByCountries extends Component {
 
@@ -72,28 +52,14 @@ class ListByCountries extends Component {
             name: "Total Deaths",
         }
     ]
-
-
     
     componentDidMount = () => {
-        getInformationPerDay()
+        getInformationCharts()
         .then(result => {
                 this.setState({data: result})
         }).catch((err) => {
             Notify('error','Error consultado datos',`Ha ocurrido un problema consultado los datos, por favor recargar la página o vuleva a iniciar sesión.`)
         })
-    }
-
-    componentDidUpdate = () => {
-        if(this.state.dataActualizada === true){
-            getInformationPerDay()
-                .then(result => {
-                    this.setState({data: result})
-                    this.setState({dataActualizada: false})    
-                }).catch((err) => {
-                    Notify('error','Error consultado datos',`Ha ocurrido un problema consultado los datos, por favor recargar la página o vuleva a iniciar sesión.`)
-                })
-        }
     }
 
     render() {

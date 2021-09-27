@@ -1,8 +1,8 @@
 import { createAxiosInstance } from '../../Shared/helper';
 
-export const getInformationPerDay = () => {
+export const getInformationCharts= () => {
 
-    const endpoint = "/historical/all?lastdays=100";
+    const endpoint = "/historical/all?lastdays=60";
 
     return new Promise((resolve, reject) => {
         try {
