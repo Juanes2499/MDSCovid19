@@ -107,7 +107,7 @@ export const masterPage =  (ComposedComponent, ...props) => {
                     <Sidenav expanded={expand} className="sidebar-body">
                         <Nav>
                             <Nav.Item eventKey="1" active icon={<Icon icon="avatar" style={{color:'#FFF'}} />}>
-                                <span className="sidebar-header-labels"> MDS Software</span>
+                                <span className="sidebar-header-labels"> Covid Software</span>
                             </Nav.Item>
                             <hr style={{marginLeft:'5%', marginRight:'5%', width:'90%'}}/>
                             <Nav.Item eventKey="2" active icon={<Icon icon="globe" style={{color:'#FFF'}} />} onSelect={() => history.push(`/V3/Covid-19/ListByCountries`)}>
@@ -139,7 +139,7 @@ export const masterPage =  (ComposedComponent, ...props) => {
                                                 <Nav.Item disabled style={{ width: 56, textAlign: 'center' }} />
                                             }
                                         </Nav>
-                                        <p style={{fontFamily:'roboto', fontWeight:'normal', fontSize:'25px', color:'#1d43ad'}}>Covid 19 - MDS</p>
+                                        <p style={{fontFamily:'roboto', fontWeight:'normal', fontSize:'25px', color:'#1d43ad'}}>Covid 19</p>
                                     </div>
                                     <div className='content-right'>
                                         <div className='right-container'>
@@ -175,7 +175,7 @@ export const masterPage =  (ComposedComponent, ...props) => {
                     <Footer>
                         <Nav style={{height:'60px', display:'fixed'}}>
                             <div style={{backgroundColor:'#FFF', height:'60px', display:'flex', justifyContent:'flex-end', alignItems:'center'}}>
-                                <span style={{fontFamily:'roboto', fontWeight:'lighter', fontSize:'17px', marginRight:'35px'}}>MDS Software - 2021</span>
+                                <span style={{fontFamily:'roboto', fontWeight:'lighter', fontSize:'17px', marginRight:'35px'}}>Covid Software - 2021</span>
                             </div>
                         </Nav>
                     </Footer>

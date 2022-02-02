@@ -63,7 +63,7 @@ export const masterPage =  (ComposedComponent) => {
                         <Sidenav expanded={expand} className="sidebar-body">
                             <Nav>
                                 <Nav.Item eventKey="1" active icon={<Icon icon="avatar" style={{color:'#FFF'}} />}>
-                                    <span className="sidebar-header-labels"> MDS Software</span>
+                                    <span className="sidebar-header-labels"> JENL Software</span>
                                 </Nav.Item>
                                 <hr style={{marginLeft:'5%', marginRight:'5%', width:'90%'}}/>
                                 <Nav.Item eventKey="2" active icon={<Icon icon="book" style={{color:'#FFF'}} />} onSelect={() => history.push(`/V3/Covid-19/ListByCountries`)}>
